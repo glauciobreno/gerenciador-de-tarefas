@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-4 login-form">
+      <h1 class="h1">Entrar</h1>
+      <form class="form-login-class form-login">
+        <div class="form-group">
+          <input type="text" class="form-control border-0 rounded-0 border-bottom" id="username" placeholder="Nome" [(ngModel)]="username">
+        </div>
+        <div class="input-group">
+          <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control border-0 rounded-0 border-bottom" id="password" [placeholder]="showPassword ? 'Senha' : 'Senha (Mostrar)'" required [(ngModel)]="password">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" (click)="togglePasswordVisibility()">
+              <i [ngClass]="showPassword ? 'bi bi-eye-slash-fill' : 'bi bi-eye-fill'"></i>
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="row">
+          <div class="col-md-12">
+            <a class="btn btn-lg btn-block btn-google btn-outline"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Entrar com o Google</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
