@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { BoasVindasComponent } from './boas-vindas/boas-vindas.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CommonModule } from '@angular/common';
+import { TelaPrincipalComponent } from './tela-principal/tela-principal.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     LoginComponent,
     BoasVindasComponent,
     CadastroComponent,
+    TelaPrincipalComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+<div class="container">
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/'">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/calendario'">Calendário</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/conta'">Conta Pessoal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/adicionar-tarefa'">Adicionar Tarefa</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h2>A FAZER</h2>
+  <div class="card-columns">
+    <div class="card" *ngFor="let tarefa of tarefas">
+      <div class="card-body" [ngClass]="tarefa.tipo">
+        <h5 class="card-title">{{ tarefa.titulo }}</h5>
+        <p class="card-text">{{ tarefa.descricao }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="showAllTasks()">Ver Todos</button>
+
+  <h2>Em Progresso</h2>
+  <div class="card-columns">
+    <div class="card" *ngFor="let tarefa of emProgressoTarefa">
+      <div class="card-body">
+        <h5 class="card-title">{{ tarefa.titulo }}</h5>
+        <p class="card-text">{{ tarefa.descricao }}</p>
+        <div class="progress">
+          <div class="progress-bar bg-info" [style.width.%]="tarefa.completo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="showInProgressTasks()">Ver Todos</button>
+
+  <h2>Concluído</h2>
+  <div class="card-columns">
+    <div class="card" *ngFor="let tarefa of tarefasCompletas">
+      <div class="card-body">
+        <h5 class="card-title">{{ tarefa.titulo }}</h5>
+        <p class="card-text">{{ tarefa.descricao }}</p>
+        <i class="bi bi-check-circle-fill text-success"></i>
+      </div>
+    </div>
+  </div>
+</div>
