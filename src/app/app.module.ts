@@ -6,10 +6,23 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BoasVindasComponent } from './boas-vindas/boas-vindas.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, BoasVindasComponent],
-  imports: [BrowserModule, RouterModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    BoasVindasComponent,
+    CadastroComponent,
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    CommonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

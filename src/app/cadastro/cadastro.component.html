@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row justify-content-center mt-5">
-    <div class="col-md-4 login-form">
-      <h1 class="h1">Cadastro</h1>
-      <form class="form-login-class form-login">
+    <div class="col-md-4 cadastro-form">
+      <h1>Cadastro</h1>
+      <form class="form-cadastro-class form-cadastro">
         <div class="form-group">
           <input type="text" class="form-control border-0 rounded-0 border-bottom" id="username" placeholder="Nome" name="username">
         </div>
@@ -10,17 +10,19 @@
           <input type="email" class="form-control border-0 rounded-0 border-bottom" id="email" placeholder="Email" name="email">
         </div>
         <div class="input-group">
-          <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control border-0 rounded-0 border-bottom" id="password" [placeholder]="showPassword ? 'Senha' : 'Senha (Mostrar)'" required name="password">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" (click)="togglePasswordVisibility()">
-
-            </button>
-          </div>
+          <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control border-0 rounded-0 border-bottom" id="password" [placeholder]="showPassword ? 'Senha' : 'Senha'" required name="password">
         </div>
         <div class="form-group">
           <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control border-0 rounded-0 border-bottom" id="repeat-password" placeholder="Repetir Senha" required name="repeatPassword">
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="submit" class="btn btn-primary custom-button">Cadastrar</button>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-google custom-button">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" class="google-icon">
+            <span class="google-text">Logar com o Google</span>
+          </button>
+        </div>
+        <span class="d-flex justify-content-center acessar-conta">Já tenho conta</span>
       </form>
     </div>
   </div>

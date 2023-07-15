@@ -9,12 +9,12 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.login-form {
+.cadastro-form {
   width: 400px;
   height: 400px;
 }
 
-.container-login {
+.container-cadastro {
   background-color: rgb(235, 244, 253);
 }
 
@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.form-login {
+.form-cadastro {
   display: flex;
   flex-direction: column;
 }
@@ -45,5 +45,26 @@ h1 {
 }
 
 .btn-google {
-  background-color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: rgb(253, 252, 251);
+}
+
+.custom-button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.google-icon {
+  margin-right: 8px;
+}
+
+.google-text {
+  white-space: nowrap;
 }
