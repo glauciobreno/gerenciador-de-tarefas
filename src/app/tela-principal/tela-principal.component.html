@@ -26,21 +26,39 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" (click)="showAllTasks()">Ver Todos</button>
+  <span class="d-flex justify-content-end">Ver todos</span>
 
   <h2>Em Progresso</h2>
-  <div class="card-columns">
-    <div class="card" *ngFor="let tarefa of emProgressoTarefa">
-      <div class="card-body">
-        <h5 class="card-title">{{ tarefa.titulo }}</h5>
-        <p class="card-text">{{ tarefa.descricao }}</p>
-        <div class="progress">
-          <div class="progress-bar bg-info" [style.width.%]="tarefa.completo"></div>
+  <div class="row">
+    <div class="col ">
+      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="card-columns d-flex">
+              <div class="card" *ngFor="let tarefa of emProgressoTarefa">
+                <div class="card-body">
+                  <h5 class="card-title">{{ tarefa.titulo }}</h5>
+                  <p class="card-text">{{ tarefa.descricao }}</p>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" [style.width.%]="tarefa.completo"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" (click)="showInProgressTasks()">Ver Todos</button>
+  <span class="d-flex justify-content-end">Ver todos</span>
 
   <h2>Concluído</h2>
   <div class="card-columns">

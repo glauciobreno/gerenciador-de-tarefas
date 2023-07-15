@@ -9,6 +9,7 @@ import { BoasVindasComponent } from './boas-vindas/boas-vindas.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CommonModule } from '@angular/common';
 import { TelaPrincipalComponent } from './tela-principal/tela-principal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TelaPrincipalComponent } from './tela-principal/tela-principal.componen
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

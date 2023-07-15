@@ -31,14 +31,34 @@ export class TelaPrincipalComponent {
 
   emProgressoTarefa: any[] = [
     {
-      titulo: 'Tarefa em Progresso 1',
+      titulo: 'Tarefa em Progresso 23',
       descricao: 'Descrição da Tarefa em Progresso 1',
-      completo: 50,
+      completo: 97,
     },
     {
-      titulo: 'Tarefa em Progresso 2',
+      titulo: 'Tarefa em Progresso 6',
+      descricao: 'Descrição da Tarefa em Progresso 2',
+      completo: 42,
+    },
+    {
+      titulo: 'Tarefa em Progresso 6',
       descricao: 'Descrição da Tarefa em Progresso 2',
       completo: 75,
+    },
+    {
+      titulo: 'Tarefa em Progresso5',
+      descricao: 'Descrição da Tarefa em Progresso 2',
+      completo: 55,
+    },
+    {
+      titulo: 'Tarefa em Progresso 4',
+      descricao: 'Descrição da Tarefa em Progresso 2',
+      completo: 32,
+    },
+    {
+      titulo: 'Tarefa em Progresso 3',
+      descricao: 'Descrição da Tarefa em Progresso 2',
+      completo: 5,
     },
   ];
 
