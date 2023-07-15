@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,6 +7,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./cadastro.component.css'],
 })
 export class CadastroComponent {
+  constructor(private router: Router) {}
+
   username: string = '';
   email: string = '';
   password: string = '';
@@ -15,5 +17,9 @@ export class CadastroComponent {
 
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
+  }
+
+  redirectToLogin() {
+    this.router.navigate(['/login']);
   }
 }
