@@ -10,7 +10,7 @@
           <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control border-0 rounded-0 border-bottom" id="password" [placeholder]="showPassword ? 'Senha' : 'Senha (Mostrar)'" required [(ngModel)]="password">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" (click)="togglePasswordVisibility()">
-              <i [ngClass]="showPassword ? 'bi bi-eye-slash-fill' : 'bi bi-eye-fill'"></i>
+              <i [ngClass]="showPassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'"></i>
             </button>
           </div>
         </div>
