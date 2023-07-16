@@ -10,6 +10,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { CommonModule } from '@angular/common';
 import { TelaPrincipalComponent } from './tela-principal/tela-principal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdicionarTarefaComponent } from './adicionar-tarefa/adicionar-tarefa.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BoasVindasComponent,
     CadastroComponent,
     TelaPrincipalComponent,
+    AdicionarTarefaComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     CommonModule,
     BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
