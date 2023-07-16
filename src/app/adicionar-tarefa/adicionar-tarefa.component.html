@@ -1,58 +1,59 @@
-<div class="row justify-content-center">
-  <div class="col-md-6">
-    <form>
+<div class="container d-flex row justify-content-center rounded">
+  <div class="col-md-6 rounded">
+    <form class="custom-form">
       <div class="mb-3 mt-5">
         <h4 class="text-center">Criar Tarefa</h4>
       </div>
       <div class="mb-3 mt-5">
         <div class="input-group">
-          <input type="text" class="form-control border-0 border-bottom" id="titulo-modal" aria-describedby="inserirTitulo" placeholder="Digite um título">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom custom-placeholder" id="titulo-modal" aria-describedby="inserirTitulo" placeholder="Digite o título" style="font-size: 22px;">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="input-group">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom" id="descricao-modal" aria-describedby="inserirdescricao" placeholder="Adicione uma descrição (opcional)">
         </div>
       </div>
       <div class="mb-3">
         <div class="input-group">
-          <input type="text" class="form-control border-0 border-bottom" id="descricao-modal" aria-describedby="inserirdescricao" placeholder="Adicione uma descrição (opcional)">
-        </div>
-      </div>
-      <div class="mb-3">
-        <div class="input-group">
-          <span class="input-group-text">
-            <i class="fas fa-calendar-alt"></i>
+          <span class="input-group-text bg-transparent border-0">
+            <i class="fas fa-calendar-alt text-reset"></i>
           </span>
-          <input type="date" class="form-control border-0 border-bottom" id="prazoDate">
+          <input type="date" class="form-control bg-transparent border-0 border-bottom" id="prazoDate">
         </div>
       </div>
       <div class="mb-3">
         <div class="input-group">
-          <span class="input-group-text">
-            <i class="fas fa-tag"></i>
+          <span class="input-group-text bg-transparent border-0">
+            <i class="fas fa-tag text-reset"></i>
           </span>
-          <input type="text" class="form-control border-0 border-bottom" id="inserirCategoria" aria-describedby="inserirCategoria" placeholder="Inserir categoria">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom" id="inserirCategoria" aria-describedby="inserirCategoria" placeholder="Inserir categoria">
         </div>
       </div>
       <div class="mb-3">
         <div class="input-group">
-          <span class="input-group-text">
-            <i class="fas fa-user-plus"></i>
+          <span class="input-group-text bg-transparent border-0">
+            <i class="fas fa-user-plus text-reset"></i>
           </span>
-          <input type="text" class="form-control border-0 border-bottom" id="adicionarMembros" aria-describedby="adicionarMembros" placeholder="Adicionar Membros">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom" id="adicionarMembros" aria-describedby="adicionarMembros" placeholder="Adicionar Membros">
         </div>
       </div>
       <div class="mb-3">
         <div class="input-group">
-          <span class="input-group-text">
-            <i class="fas fa-paperclip"></i>
+          <span class="input-group-text bg-transparent border-0">
+            <i class="fas fa-paperclip text-reset"></i>
           </span>
-          <input type="text" class="form-control border-0 border-bottom" id="inserirAnexos" aria-describedby="adicionarMembros" placeholder="Inserir anexos">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom" id="inserirAnexos" aria-describedby="adicionarMembros" placeholder="Inserir anexos">
         </div>
       </div>
       <hr>
       <div class="mb-3">
         <div class="input-group">
-          <span class="input-group-text">
-            <i class="fas fa-arrow-down-right"></i>
+          <span class="input-group-text bg-transparent border-0">
+            <i class="fas fa-arrow-down-right text-reset"></i>
           </span>
-          <input type="text" class="form-control border-0 border-bottom" id="adicionarSubTarefa" aria-describedby="adicionarSubTarefa" placeholder="Adicionar Sub-tarefas">
+          <input type="text" class="form-control bg-transparent border-0 border-bottom" id="adicionarSubTarefa" aria-describedby="adicionarSubTarefa" placeholder="Adicionar Sub-tarefas">
         </div>
       </div>
       <div class="mb-4 d-flex justify-content-end">
