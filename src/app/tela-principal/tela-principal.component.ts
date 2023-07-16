@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AdicionarTarefaComponent } from '../adicionar-tarefa/adicionar-tarefa.component';
 
 @Component({
   selector: 'app-tela-principal',
@@ -6,59 +8,83 @@ import { Component } from '@angular/core';
   styleUrls: ['./tela-principal.component.css'],
 })
 export class TelaPrincipalComponent {
+  constructor(private modalService: NgbModal) {}
+
+  openModal() {
+    this.modalService.open(AdicionarTarefaComponent);
+  }
+
+  closeModal(modal: any) {
+    modal.dismiss();
+  }
+
+  emProgressoTarefa: any[] = [
+    // Array inicial de tarefas em progresso
+  ];
+
+  mostrarMaisTarefas: boolean = false;
+
+  adicionarTarefas(): void {
+    // fazer uma chamada à API
+  }
+
+  exibirMaisTarefas(): void {
+    this.mostrarMaisTarefas = true;
+  }
+
   tarefas: any[] = [
     {
       titulo: 'Desafio de design',
       descricao: 'Descrição da Tarefa Descrição da Tarefa Descrição da Tarefa',
-      tipo: 'bg-primary',
+      tipo: 'bg-primary-trf',
     },
     {
       titulo: 'Entrevista de emprego',
       descricao: 'Descrição Descrição Descrição Descrição Descrição',
-      tipo: 'bg-secondary',
+      tipo: 'bg-secondary-trf',
     },
     {
       titulo: 'Tarefa 3',
       descricao: 'Descrição da Tarefa 3',
-      tipo: 'bg-warning',
+      tipo: 'bg-warning-trf',
     },
     {
       titulo: 'Tarefa 4',
       descricao: 'Descrição da Tarefa 4',
-      tipo: 'bg-danger',
+      tipo: 'bg-danger-trf',
     },
   ];
 
-  emProgressoTarefa: any[] = [
+  emProgressoTarefas: any[] = [
     {
       titulo: 'Tarefa em Progresso 23',
       descricao: 'Descrição da Tarefa em Progresso 1',
       completo: 97,
+      tipo: 'bg-warning-trf',
     },
     {
       titulo: 'Tarefa em Progresso 6',
       descricao: 'Descrição da Tarefa em Progresso 2',
       completo: 42,
+      tipo: 'bg-secondary-trf',
     },
     {
       titulo: 'Tarefa em Progresso 6',
       descricao: 'Descrição da Tarefa em Progresso 2',
       completo: 75,
+      tipo: 'bg-warning-trf',
     },
     {
-      titulo: 'Tarefa em Progresso5',
+      titulo: 'Tarefa em Progresso 6',
       descricao: 'Descrição da Tarefa em Progresso 2',
-      completo: 55,
+      completo: 42,
+      tipo: 'bg-secondary-trf',
     },
     {
-      titulo: 'Tarefa em Progresso 4',
+      titulo: 'Tarefa em Progresso 6',
       descricao: 'Descrição da Tarefa em Progresso 2',
-      completo: 32,
-    },
-    {
-      titulo: 'Tarefa em Progresso 3',
-      descricao: 'Descrição da Tarefa em Progresso 2',
-      completo: 5,
+      completo: 75,
+      tipo: 'bg-warning-trf',
     },
   ];
 
